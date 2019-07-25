@@ -6,6 +6,8 @@ class Computer {
     Date introduced
     Date discontinued
 
+    static belongsTo = [company : Company]
+
     static constraints = {
     }
 }
