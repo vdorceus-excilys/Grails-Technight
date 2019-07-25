@@ -15,4 +15,8 @@ class Computer {
         introduced ( nullable:true, validator: {value, object, errors -> return DateValidator.isIntroducedValid(value,object.discontinued); } );
         discontinued (nullable:true, validator: {value, object, errors -> return DateValidator.isDiscontinuedValid(object.introduced,value); } );
     }
+
+    toString(){
+        return name
+    }
 }

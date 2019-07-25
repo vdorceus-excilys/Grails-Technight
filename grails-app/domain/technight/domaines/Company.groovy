@@ -9,4 +9,8 @@ class Company {
     static constraints = {
         name( nullable:false, minSize:2, maxSize:50, unique: true)
     }
+
+    toString(){
+        return name
+    }
 }
