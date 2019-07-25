@@ -16,7 +16,8 @@ class Computer {
         discontinued (nullable:true, validator: {value, object, errors -> return DateValidator.isDiscontinuedValid(object.introduced,value); } );
     }
 
-    toString(){
+    @Override
+    String toString(){
         return name
     }
 }

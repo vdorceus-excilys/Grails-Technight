@@ -10,7 +10,8 @@ class Company {
         name( nullable:false, minSize:2, maxSize:50, unique: true)
     }
 
-    toString(){
+    @Override
+    String toString(){
         return name
     }
 }
