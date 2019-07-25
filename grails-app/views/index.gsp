@@ -6,6 +6,12 @@
 </head>
 <body>
 <content tag="nav">
+<sec:ifLoggedIn>
+<g:link controller="logout" >Logout</g:link>
+</sec:ifLoggedIn>
+<sec:ifNotLoggedIn>
+<g:link controller="login" action="auth">Login</g:link>
+</sec:ifNotLoggedIn>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
         <ul class="dropdown-menu">
