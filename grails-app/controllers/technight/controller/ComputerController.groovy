@@ -1,6 +1,8 @@
 package technight.controller
 
+import technight.domaines.Computer
+
 class ComputerController {
 
-    def index() { }
+    static scaffold = Computer
 }

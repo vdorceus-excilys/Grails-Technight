@@ -1,6 +1,8 @@
 package technight.controller
 
+import technight.domaines.Company
+
 class CompanyController {
 
-    def index() { }
+    static scaffold = Company
 }
