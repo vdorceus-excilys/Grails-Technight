@@ -10,7 +10,7 @@ class BootStrap {
         Company asus = new Company(name: 'ASUS')
         companies.add(asus)
         Company dell = new Company(name: 'DELL')
-        companies.add(asus)
+        companies.add(dell)
         
         companies.each {company -> company.save(flush: true, failOnError:true)}
 
