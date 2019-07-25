@@ -2,7 +2,9 @@ package technight.domaines
 
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
+import grails.plugin.springsecurity.annotation.Secured
 
+@Secured(["hasRole('ROLE_SIMPLE')"])
 class ComputerController {
 
     ComputerService computerService
